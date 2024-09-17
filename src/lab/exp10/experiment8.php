@@ -6,11 +6,8 @@
 <script type="text/javascript">
 function language(lang){
 	document.getElementById("train-size").innerHTML="";
-	if(lang=="null")
-	{
-		// alert("Select Language");
-		// return;
-	}
+	if(lang!="null")
+		return;
 	$('#train-size').load('exp8.php?language='+lang);
 }
 
